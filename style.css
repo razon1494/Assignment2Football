@@ -34,6 +34,7 @@ body {
 .head-title {
     font-size: 64px;
     color: #ffffff;
+    transition: transform 2s;
 }
 
 .title a {
@@ -52,6 +53,7 @@ body {
     width: 556px;
     height: 400px;
     margin-left: 102px;
+    transition: transform 3s ease;
 }
 
 
@@ -61,12 +63,10 @@ body {
 
 .title-img img:hover {
     transform: scale(1.2) skew(20deg) rotate(360deg);
-    transition: transform 3s ease-in-out;
 }
 
 .head-title:hover {
-    transform: rotate(360deg) scale(1.5);
-    transition: transform 2s;
+    transform: rotate(360deg) scale(1.2) translate(-20%, -20%);
 }
 
 
@@ -323,6 +323,7 @@ footer {
     .head-title {
         font-size: 36px;
         margin-bottom: 30px;
+        transition: transform 3s ease-in-out;
     }
     .fa-arrow-right {
         padding-left: 8px;
@@ -334,14 +335,13 @@ footer {
         margin-right: 50px;
         margin-top: 50px;
         align-items: center;
-    }
-    .title-img img:hover {
-        transform: rotate(360deg);
         transition: transform 3s ease-in-out;
     }
+    .title-img img:hover {
+        transform: translate(20%, 20%) scale(.7);
+    }
     .head-title:hover {
-        transform: rotate(360deg);
-        transition: transform 2s;
+        transform: translate(-10%, 10%) scale(0.7);
     }
     /*----------------------------
  Players Responsive For Phone
