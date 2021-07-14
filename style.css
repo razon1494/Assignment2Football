@@ -473,7 +473,7 @@ Bouncing Ball for phone
         transform: rotate(360deg);
     }
     .head-title:hover {
-        transform: rotate(360deg);
+        transform: scale(1.2) translate(15%, -20%);
     }
     /*----------------------------
  Players Responsive For Tab and Ipad
