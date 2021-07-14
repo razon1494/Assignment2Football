@@ -388,8 +388,8 @@ highlights For Phone
         text-align: justify;
     }
     .text-part:hover {
-        background-color: rgba(0, 0, 0, 0);
-        transform: translate(10%, -10%);
+        background-color: LavenderBlush;
+        transform: translate(0%, -10%);
     }
     .highlights-img img {
         width: 100%;
@@ -480,18 +480,13 @@ Bouncing Ball for phone
 ------------------------------*/
     .players {
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin-left: 20px;
+        align-items: center;
     }
     .player {
         width: 270px;
         height: 500px;
         margin-top: 24px;
-        margin-right: 0px;
-        margin-left: 0px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        border-radius: 10px;
     }
     .player-list {
         grid-template-columns: repeat(2, 1fr);
@@ -517,8 +512,8 @@ Highlights Responsive For Tab and Ipad
         height: 280px;
     }
     .text-part:hover {
-        background-color: rgba(156, 107, 28, 0.329);
-        transform: translate(10%, -10%);
+        background-color: Lavender;
+        transform: translate(0%, -10%);
     }
     .text-part h1 {
         font-size: 30px;
@@ -536,6 +531,17 @@ Highlights Responsive For Tab and Ipad
     }
     .responsive-iframe {
         display: none;
+    }
+    /*----------------------------
+Bouncing Ball for phone
+------------------------------*/
+    .bouncing-ball {
+        width: 70%;
+        margin-left: 10%;
+    }
+    .ball img {
+        width: 70px;
+        height: 70px;
     }
     /*----------------------------
 Footer Responsive For Tab and Ipad
