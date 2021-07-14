@@ -311,31 +311,28 @@ footer {
  Header Responsive For phone
 ------------------------------*/
     .starting {
+        width: 100%;
         flex-direction: column;
         height: 677px;
-        width: 100%;
-        padding-left: 20px;
+        padding-left: 0px;
     }
     .title {
-        width: 100%;
+        width: 70%;
         margin-top: 110px;
     }
     .head-title {
-        font-size: 36px;
+        font-size: 30px;
         margin-bottom: 30px;
-        transition: transform 3s ease-in-out;
-    }
-    .fa-arrow-right {
-        padding-left: 8px;
+        transition: transform 3s linear;
     }
     .title-img img {
-        width: 300px;
-        height: 260px;
-        margin-left: 0px;
+        width: 250px;
+        height: 200px;
+        margin-left: 50px;
         margin-right: 50px;
         margin-top: 50px;
         align-items: center;
-        transition: transform 3s ease-in-out;
+        transition: transform 3s linear;
     }
     .title-img img:hover {
         transform: translate(20%, 20%) scale(.7);
@@ -348,20 +345,23 @@ footer {
 ------------------------------*/
     .players {
         flex-direction: column;
+        margin-left: 15px;
         align-items: center;
-        justify-content: center;
     }
     .player {
-        width: 330px;
-        height: 474px;
-        margin-left: 75px;
+        width: 280px;
+        height: 520px;
         margin-top: 24px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     }
     .player-list {
         grid-template-columns: repeat(1, 1fr);
     }
     .player img {
-        width: 300px;
+        width: 280px;
         height: 256px;
     }
     /*----------------------------
@@ -370,13 +370,14 @@ highlights For Phone
     .highlights {
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 80%;
         margin-left: 0%;
         margin-top: 60px;
     }
     .text-part {
-        width: 80%;
+        width: 100%;
         height: 350px;
+        margin-left: 50px;
     }
     .text-part h1 {
         font-size: 30px;
@@ -390,14 +391,26 @@ highlights For Phone
         transform: translate(10%, -10%);
     }
     .highlights-img img {
-        width: 70%;
+        width: 100%;
         height: 248px;
-        margin-top: 40px;
-        padding-right: 110px;
+        margin-top: 10%;
+        padding-right: 130px;
+        margin-left: 25px;
         display: block;
     }
     .responsive-iframe {
         display: none;
+    }
+    /*----------------------------
+Bouncing Ball for phone
+------------------------------*/
+    .bouncing-ball {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .ball img {
+        width: 50px;
+        height: 50px;
     }
     /*----------------------------
  Footer Responsive For Phone
@@ -424,7 +437,7 @@ highlights For Phone
  Responsive For Tab and Ipad
 ------------------------------*/
 
-@media only screen and (min-width:688px) and (max-width:992px) {
+@media only screen and (min-width:688px) and (max-width:1025px) {
     /*----------------------------
  HeaderResponsive For Tab and Ipad
 ------------------------------*/
@@ -441,6 +454,7 @@ highlights For Phone
     .head-title {
         font-size: 36px;
         margin-bottom: 30px;
+        transition: transform 2s;
     }
     .fa-arrow-right {
         padding-left: 8px;
@@ -452,36 +466,38 @@ highlights For Phone
         margin-right: 50px;
         margin-top: 50px;
         align-items: center;
+        transition: transform 3s ease-in-out;
     }
     .title-img img:hover {
         transform: rotate(360deg);
-        transition: transform 3s ease-in-out;
     }
     .head-title:hover {
         transform: rotate(360deg);
-        transition: transform 2s;
     }
     /*----------------------------
  Players Responsive For Tab and Ipad
 ------------------------------*/
     .players {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 40px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 20px;
     }
     .player {
-        width: 300px;
+        width: 270px;
         height: 500px;
         margin-top: 24px;
         margin-right: 0px;
         margin-left: 0px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 10px;
     }
     .player-list {
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
     }
     .player img {
-        width: 300px;
+        width: 270px;
         height: 256px;
     }
     /*----------------------------
@@ -495,8 +511,8 @@ Highlights Responsive For Tab and Ipad
         margin-top: 60px;
     }
     .text-part {
-        width: 75%;
-        padding-right: 30px;
+        width: 65%;
+        padding-right: 50px;
         height: 280px;
     }
     .text-part:hover {
